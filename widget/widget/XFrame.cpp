@@ -4,6 +4,7 @@
 #include <wx/panel.h>
 #include <wx/sizer.h>
 #include <wx/statbmp.h>
+#include "XSettingFrame.h"
 
 BEGIN_EVENT_TABLE(XFrame,wxFrame)
 
@@ -63,6 +64,7 @@ wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, size) {
 	wxStaticBitmap* setting_btn = new wxStaticBitmap(header_panel, ID_CLOSE_BTN, wxBitmap(settingimg), \
 		wxPoint(size.GetWidth() - 110, 14));
 	header_sizer->Add(setting_btn);
+	setting_btn->Connect(wxEVT_LEFT_DOWN, wxMouseEventHandler(XFrame::OnSetting));
 
 	wxImage autoimg("auto.png", wxBITMAP_TYPE_PNG);
 	autoimg.Rescale(32, 32);
@@ -118,10 +120,11 @@ wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, size) {
 
 
 	master_sizer->Fit(main_panel);
+
 }
 
 void XFrame::OnCloseBtn(wxMouseEvent& event) {
-	Sleep(500);
+	Sleep(300);
 	Close(true);
 	exit(0);
 }
@@ -146,4 +149,10 @@ void XFrame::OnHeaderLeftUp(wxMouseEvent& event) {
 	if (this->HasCapture()) {
 		this->ReleaseMouse();
 	}
+}
+
+void XFrame::OnSetting(wxMouseEvent& event) {
+	setting_frame = new XSettingFrame(this);
+	setting_frame->Show();
+	setting_frame->SetPosition(wxPoint(100, 100));
 }

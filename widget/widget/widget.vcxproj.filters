@@ -18,9 +18,15 @@
     <ClInclude Include="XFrame.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="XSettingFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="XFrame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XSettingFrame.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

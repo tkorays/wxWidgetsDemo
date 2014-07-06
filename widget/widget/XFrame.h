@@ -7,6 +7,7 @@
 
 class wxBoxSizer;
 class wxPanel;
+class XSettingFrame;
 
 class XFrame :public wxFrame {
 private:
@@ -15,12 +16,14 @@ private:
 	void OnHeaderLeftDown(wxMouseEvent& event);
 	void OnHeaderLeftDrag(wxMouseEvent& event); 
 	void OnHeaderLeftUp(wxMouseEvent& event);
+	void OnSetting(wxMouseEvent& event);
 public:
 	wxPoint offset;
 	wxString title;
 	wxString icon_png;
 	wxBoxSizer* main_sizer;
 	wxPanel* main_panel;
+	XSettingFrame* setting_frame;
 	XFrame(wxSize size, wxString icon_png, wxString title);
 
 	
