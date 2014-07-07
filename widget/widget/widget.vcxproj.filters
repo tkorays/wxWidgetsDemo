@@ -21,12 +21,21 @@
     <ClInclude Include="XSettingFrame.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="XInitFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resources.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="XFrame.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="XSettingFrame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XInitFrame.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

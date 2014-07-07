@@ -81,11 +81,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="resources.h" />
     <ClInclude Include="XFrame.h" />
+    <ClInclude Include="XInitFrame.h" />
     <ClInclude Include="XSettingFrame.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="XFrame.cpp" />
+    <ClCompile Include="XInitFrame.cpp" />
     <ClCompile Include="XSettingFrame.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -5,6 +5,7 @@
 #include <wx/sizer.h>
 #include <wx/statbmp.h>
 #include "XSettingFrame.h"
+#include "XInitFrame.h"
 
 BEGIN_EVENT_TABLE(XFrame,wxFrame)
 
