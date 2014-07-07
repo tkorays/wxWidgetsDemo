@@ -41,8 +41,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(WX_INCLUDE);E:\Programing\Cpp\Libraries\wxWidgetsDemo\widget\widget;$(IncludePath)</IncludePath>
-    <LibraryPath>$(WX_LIB);E:\Programing\Cpp\Libraries\wxWidgetsDemo\widget\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(WX_INCLUDE);E:\Programing\Cpp\Libraries\wxWidgetsDemo\widget\widget;$(OPENCV_INCLUDE);$(IncludePath)</IncludePath>
+    <LibraryPath>$(WX_LIB);E:\Programing\Cpp\Libraries\wxWidgetsDemo\widget\Debug;$(OPENCV_LIB);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -82,6 +82,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="helper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

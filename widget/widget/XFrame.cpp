@@ -96,8 +96,8 @@ wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, size) {
 	main_sizer->Add(left_panel);
 
 	wxPanel* left_top = new wxPanel(left_panel, wxID_ANY, wxDefaultPosition, wxSize(320, size.GetHeight() - 110 - 240));
-	wxPanel* left_bottom = new wxPanel(left_panel, wxID_ANY, wxPoint(0, size.GetHeight() - 110 - 240), wxSize(320, 240));
-	left_bottom->SetBackgroundColour(*wxRED);
+	left_bottom = new wxPanel(left_panel, wxID_ANY, wxPoint(0, size.GetHeight() - 110 - 240), wxSize(320, 240));
+	left_bottom->SetBackgroundColour(wxColor(32, 32, 32));
 	left_sizer->Add(left_top);
 	left_sizer->Add(left_bottom);
 

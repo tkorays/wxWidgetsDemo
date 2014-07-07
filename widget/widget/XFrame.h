@@ -23,6 +23,7 @@ public:
 	wxString icon_png;
 	wxBoxSizer* main_sizer;
 	wxPanel* main_panel;
+	wxPanel* left_bottom;
 	XSettingFrame* setting_frame;
 	XFrame(wxSize size, wxString icon_png, wxString title);
 
